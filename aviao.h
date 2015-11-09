@@ -13,7 +13,7 @@ class Aviao{
 		void calcularPesoTrip();
 		string *tripulacao;
 		float *pesoTrip;
-		
+		int numTripulacao;
 			
 	private:
 		float peso; // em Kg
