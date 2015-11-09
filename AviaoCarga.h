@@ -12,8 +12,7 @@ class AviaoCarga: public Aviao{
 	
 		bool estadoPortaDeCarga;
 		int qtdCarga;
-		int qtdCargaMax;
-		int cargaID;
+		const static int qtdCargaMax;
 		int *cargas;
 		
 };

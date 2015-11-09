@@ -11,3 +11,21 @@ AviaoCarga::AviaoCarga(float peso, int altitude , int velocidade, bool estadoPor
 
 	
 }
+
+AviaoCarga::AviaoCarga(const AviaoCarga &aviaoCargaOut ) : Aviao(static_cast<Aviao>(aviaoCargaOut))
+{
+	this->estadoPortaDeCarga = aviaoCargaOut.estadoPortaDeCarga;
+	this->qtdCarga = aviaoCargaOut.qtdCarga;
+	this->qtdCargaMax = aviaoCargaOut.qtdCargaMax;
+	this->cargas = aviaoCargaOut.qtdCarga;
+	
+	
+	if(this->qtdCarga !=0)
+	{
+		cargas = new int[qtdCarga];
+		for(int i=0; i<qtdCarga; i++)
+			cargas[i] = aviaoOut.qtdCarga[i];
+	}
+	
+	
+}
