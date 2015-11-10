@@ -6,8 +6,8 @@ class AviaoJato: Aviao{
 		AviaoJato();
 		int executarManobra();
 		void ativarTurbo();
-		virtual void mover() = 0;
-		virtual void ligarMotores()=0;
+		virtual void mover() ;
+		virtual void ligarMotores();
 		
 	private:
 		
