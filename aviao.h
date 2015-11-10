@@ -13,6 +13,7 @@ class Aviao{
 		void calcularPesoTrip();
 		string *tripulacao;
 		float *pesoTrip;
+		float somaPeso;
 		int numTripulacao;
 			
 	private:

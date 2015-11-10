@@ -26,8 +26,22 @@ Aviao::Aviao(const Aviao &aviaoOut){
 		for(int i=0; i<numTripulacao; i++)
 			pesoTrip[i] = aviaoOut.numTripulacao[i];
 	}
+}
 
+Aviao::decolar(int altitude){
+	printf("O aviao decolou!");
+	this->altitude = altitude;
+} 
+Aviao::pousou(){
+	printf("O aviao pousou!");
+	this->altitude = 0;
+} 
 
+float Aviao::calcularPesoTrip(){
+		
+	float somaPeso= 0;
+	for(int i= 0; i<numtripulacao; i++)
+		somaPeso += pesoTrip[i]
 	
-
+	return somaPeso;
 }
