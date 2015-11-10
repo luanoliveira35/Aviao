@@ -5,6 +5,8 @@ class AviaoCarga: public Aviao{
 
 		AviaoCarga(float = 1000.0, int = 700, int = 250 ,bool = false, int = 0, int = 500 );
 		AviaoCarga( const Aviao &);
+		virtual void mover();
+		virtual void ligarMotores();
 		void abrirPortadeCarga();
 		void adicionarCarga(int);
 			
@@ -14,5 +16,6 @@ class AviaoCarga: public Aviao{
 		int qtdCarga;
 		const static int qtdCargaMax;
 		int *cargas;
+		bool motor ;
 		
 };

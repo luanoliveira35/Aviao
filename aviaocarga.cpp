@@ -29,3 +29,19 @@ AviaoCarga::AviaoCarga(const AviaoCarga &aviaoCargaOut ) : Aviao(static_cast<Avi
 	
 	
 }
+
+AviaoCarga::ligarMotores(){
+	this->motor = true;	
+}
+
+AviaoCarga::mover(){
+	if(this->motor){
+		this-> velocidade = 100;
+	}
+}
+
+AviaoCarga::abrirPortadeCarga(){
+	this->estadoPortaDeCarga = true;	
+}
+
+
